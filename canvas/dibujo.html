@@ -9,20 +9,37 @@
 </head>
 
 <body>
-    <center><h1>dibujo en canvas</h1></center>
-    <<center><p>
-    <h2>cuantas lineas quieres</h2>
+    <center>
+        <h1>dibujo en canvas</h1>
+    </center>
+    <<center>
+        <p>
+        <h2>cuantas lineas quieres</h2>
         <input type="text" id="texto_lineas" />
-        <input type="button" value="enviar" id="boton" />
-        <p><b><font color = "red"><h3>escoja un color</h3></font></b><input type="color" id="color"/></p>
-        <p><b><font color = "red"><h3>escoja un segundo color</h3></font></b><input type="color" id="color2"/></p>
-    </p></center>
-    <center><canvas width="400" height="400" id="dibujo"></canvas></center>
-<center><p>asi queda tu dibujo</p></center>
-    <script src="dibujo.js"></script>
+        <p><b>
+                <font color="red">
+                    <h3>escoja un color</h3>
+                </font>
+            </b><input type="color" id="color" /></p>
+        <p><b>
+                <font color="red">
+                    <h3>escoja un segundo color</h3>
+                </font>
+            </b><input type="color" id="color2" /></p>
+        <h2>¿De que tamaño quieres la figura?</h2>
+        <input type="text" id="tamano" />
+        <br><input type="button" value="enviar" id="boton" />
 
-    <body bgcolor="grey">
+        </p>
+        </center>
+        <center><canvas width="400" height="400" id="dibujo"></canvas></center>
+        <center>
+            <p>asi queda tu dibujo</p>
+        </center>
+        <script src="dibujo.js"></script>
 
-    </body>
+        <body bgcolor="grey">
+
+        </body>
 
 </html>
