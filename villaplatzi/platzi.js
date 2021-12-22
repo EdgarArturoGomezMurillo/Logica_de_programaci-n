@@ -14,6 +14,24 @@ function moverconejo(evento) {
 
     }
     switch (evento.keyCode) {
+        case teclas.RIGHT:
+            setTimeout(() => {
+                conejo.imagen.src = "conejo-1.png"
+                papel.drawImage(conejo.imagen, xconejo, yconejo);
+            }, 300)
+
+            setTimeout(() => {
+                xconejo = xconejo + movimiento;
+                conejo.imagen.src = "conejo-3.png"
+                papel.drawImage(conejo.imagen, xconejo, yconejo);
+            }, 600);
+
+            setTimeout(() => {
+                conejo.imagen.src = "conejo-2.png"
+                papel.drawImage(conejo.imagen, xconejo, yconejo);
+            }, 900);
+            break;
+        /*
         case teclas.UP:
             yconejo = yconejo - movimiento;
             dibujar();
@@ -22,15 +40,12 @@ function moverconejo(evento) {
             yconejo = yconejo + movimiento;
             dibujar();
             break;
-        case teclas.RIGHT:
-            xconejo = xconejo + movimiento;
-            dibujar();
-            break;
+        
         case teclas.LEFT:
             xconejo = xconejo - movimiento;
             dibujar();
             break;
-
+        */
     }
 }
 
@@ -58,7 +73,7 @@ var pollo = {
 
 };
 var conejo = {
-    url: "conejo.png",
+    url: "conejo-2.png",
     cargaOK: false
 };
 var cantidadconejo = 1;
@@ -71,15 +86,15 @@ fondo.imagen.addEventListener("load", cargarFondo);
 
 vaca.imagen = new Image();
 vaca.imagen.src = vaca.url;
-vaca.imagen.addEventListener("load", cargarVacas);
+// vaca.imagen.addEventListener("load", cargarVacas);
 
 cerdo.imagen = new Image();
 cerdo.imagen.src = cerdo.url;
-cerdo.imagen.addEventListener("load", cargarCerdos);
+// cerdo.imagen.addEventListener("load", cargarCerdos);
 
 pollo.imagen = new Image();
 pollo.imagen.src = pollo.url;
-pollo.imagen.addEventListener("load", cargarPollos);
+// pollo.imagen.addEventListener("load", cargarPollos);
 
 conejo.imagen = new Image();
 conejo.imagen.src = conejo.url;
