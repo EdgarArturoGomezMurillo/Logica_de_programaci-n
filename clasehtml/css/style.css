@@ -1,0 +1,19 @@
+#content {
+    margin: 2rem auto;
+    width: 1080px;
+    height: 2000px;
+    margin: auto;
+    font-family: Montserrat;
+    background-color: blue;
+
+}
+
+#encabezado {
+    margin: auto;
+    font-family: Montserrat;
+    background-color: brown;
+    text-align: center;
+}
+#enviar {
+    color: blueviolet;
+}
